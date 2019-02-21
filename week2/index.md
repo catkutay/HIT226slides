@@ -8,6 +8,119 @@ Without talking write down the top thing you learned last week
 
 
 
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/dom-inspector-intro.ogg" -->
+### Chrome Developer tools: DOM Inspector
+<video>
+	<source data-src="videos/open-dev-tools.webm" type="video/webm" />
+</video>
+
+Note:
+Click the elements tab and look at the contents. It should look just like HTML you wrote for the exercise. This is not the same as the source code though as it represents the elements currently on the page. If you used javascript to add or remove an element it would appear here. This is a representation of the Document Object Model or DOM. You can just think of the DOM as how the browser keeps track of what’s on the page.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/dom-inspector-explore.ogg" -->
+### Chrome Developer tools: DOM Inspector
+<video>
+	<source data-src="videos/dev-tools-elements.webm" type="video/webm" />
+</video>
+
+Note:
+Expand the page elements if they are not already by clicking on the little arrows. Notice how the view of your page highlights the element you are currently hovering over? This makes it easy to see where the element sits as well as any padding, margins or borders. On the right you can see the CSS for the element.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/dom-inspector-demo.ogg" -->
+### Chrome Developer tools: DOM Inspector
+<video>
+	<source data-src="videos/dev-tools-edit-style.webm" type="video/webm" />
+</video>
+
+Note:
+You can do quite a lot from the elements tab. Here you can see me selecting a heading on the page, changing the font size and giving it a new colour. It’s a really easy way to change page elements around and see how they’ll look.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Chrome Developer tools: DOM Inspector
+* Explore your dom
+* Give some elements a border to see where they sit
+	<pre><code class="css">border: 1px solid black;</code></pre>
+* Drag some elements in to others
+* Can you edit the text of a heading?
+* What happens when you refresh? Why?
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-intro.ogg" -->
+### Chrome Developer tools: Network
+* View all HTTP requests the page makes <!-- .element: class="fragment" data-fragment-index="1" -->
+* View files downloaded <!-- .element: class="fragment" data-fragment-index="2" -->
+* View REST requests and responses <!-- .element: class="fragment" data-fragment-index="3" -->
+
+Note:
+The network tab shows us all the network requests the page makes. We can see all the files the page needs, including images, css and javascript as well as any requests made by javascript to load or send additional data.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Chrome Developer tools: Network
+<video>
+	<source data-src="videos/dev-tools-network.webm" type="video/webm" />
+</video>
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-usage.ogg" -->
+### Chrome Developer tools: Network
+![Chrome network tab](images/chrome-dev-network.png)
+
+Note:
+Open the network tab and reload the page. You will see a list of files appear. Each of these is a seperate HTTP request. They include the original HTML document as well as any images, stylesheets or scripts the page requires. You can also see when the page requests more data from a server.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-timeline.ogg" -->
+### Chrome Developer tools: Network timeline
+![Chrome network timeline](images/chrome-dev-network-timeline.png)
+
+Note:
+The timeline shows when it loaded different resources and how long they took. If you have a really big script or image that is making everything slow to load you can see it here.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-requests.ogg" -->
+### Chrome Developer tools: Network requests
+![Chrome network requests](images/chrome-dev-network-requests.png)
+
+Note:
+The request window shows you all the requests made. It shows you the file or resource requested, the response code, what initiated the request, how big the file is and how long it took to download.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-details.ogg" -->
+### Chrome Developer tools: Network details
+![Chrome network details](images/chrome-dev-network-details.png)
+
+Note:
+The bottom panel tells you how big the page is and how long it took to download and load. What do you are the difference between Finish, DOMContentLoaded and Load?
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/web-console.ogg" -->
+### Chrome Developer tools: Web console
+![Chrome console](images/chrome-dev-console.png)
+
+Note:
+The console is where any page errors or javascript output appear. There probably isn't much for your pages. But this is really useful once you start using javascript. We'll come back to this later in the course.
+
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Chrome Developer tools: Activity
+* Open a favourite website with dev tools open
+* How big is the page?
+* How long did it take to download?
+* Did it download a lot of files or not many
+* Are there any errors or warnings in the console?
+* Have a look through the elements to learn the page structure
+* Report back to the class on what you find
+
+
+
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
 ## Accessibility
 

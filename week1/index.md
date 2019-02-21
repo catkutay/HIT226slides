@@ -3,151 +3,6 @@
 
 
 
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-## Browser and development tools
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/browser-intro.ogg" -->
-Plenty of good brower choices
-
-![Firefox logo](images/Firefox_Logo,_2017.svg) <!-- .element: class="browser-icon" -->
-![Google chrome logo](images/Google_Chrome_icon_2011.svg) <!-- .element: class="browser-icon" -->
-![Microsoft edge logo](images/Microsoft_Edge_logo.svg) <!-- .element: class="browser-icon" -->
-
-Note:
-As you’re likely aware the different major browsers have some differences in the features they support and performance. Everyone has their own preferences and so in the workplace we need to test with all the major browsers.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/browser-chrome.ogg" -->
-We're going to use chrome
-
-![Disabled Firefox logo](images/Firefox_Logo,_2017.svg) <!-- .element: class="browser-icon browser-icon_disabled" -->
-![Selected Google chrome logo](images/Google_Chrome_icon_2011.svg) <!-- .element: class="browser-icon browser-icon_selected" -->
-![Disabled Microsoft edge logo](images/Microsoft_Edge_logo.svg) <!-- .element: class="browser-icon browser-icon_disabled" -->
-
-* Modern feature set <!-- .element: class="fragment" data-fragment-index="1" -->
-* Great development tools <!-- .element: class="fragment" data-fragment-index="1" -->
-
-Note:
-To make things simple, we’re just going to use Chrome for this class. Chrome has a very modern feature set and great development tools that will make our work much easier. Let’s get to know the features.
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/dom-inspector-intro.ogg" -->
-### Chrome Developer tools: DOM Inspector
-<video>
-	<source data-src="videos/open-dev-tools.webm" type="video/webm" />
-</video>
-
-Note:
-Click the elements tab and look at the contents. It should look just like HTML you wrote for the exercise. This is not the same as the source code though as it represents the elements currently on the page. If you used javascript to add or remove an element it would appear here. This is a representation of the Document Object Model or DOM. You can just think of the DOM as how the browser keeps track of what’s on the page.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/dom-inspector-explore.ogg" -->
-### Chrome Developer tools: DOM Inspector
-<video>
-	<source data-src="videos/dev-tools-elements.webm" type="video/webm" />
-</video>
-
-Note:
-Expand the page elements if they are not already by clicking on the little arrows. Notice how the view of your page highlights the element you are currently hovering over? This makes it easy to see where the element sits as well as any padding, margins or borders. On the right you can see the CSS for the element.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/dom-inspector-demo.ogg" -->
-### Chrome Developer tools: DOM Inspector
-<video>
-	<source data-src="videos/dev-tools-edit-style.webm" type="video/webm" />
-</video>
-
-Note:
-You can do quite a lot from the elements tab. Here you can see me selecting a heading on the page, changing the font size and giving it a new colour. It’s a really easy way to change page elements around and see how they’ll look.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Chrome Developer tools: DOM Inspector
-* Explore your dom
-* Give some elements a border to see where they sit
-	<pre><code class="css">border: 1px solid black;</code></pre>
-* Drag some elements in to others
-* Can you edit the text of a heading?
-* What happens when you refresh? Why?
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-intro.ogg" -->
-### Chrome Developer tools: Network
-* View all HTTP requests the page makes <!-- .element: class="fragment" data-fragment-index="1" -->
-* View files downloaded <!-- .element: class="fragment" data-fragment-index="2" -->
-* View REST requests and responses <!-- .element: class="fragment" data-fragment-index="3" -->
-
-Note:
-The network tab shows us all the network requests the page makes. We can see all the files the page needs, including images, css and javascript as well as any requests made by javascript to load or send additional data.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Chrome Developer tools: Network
-<video>
-	<source data-src="videos/dev-tools-network.webm" type="video/webm" />
-</video>
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-usage.ogg" -->
-### Chrome Developer tools: Network
-![Chrome network tab](images/chrome-dev-network.png)
-
-Note:
-Open the network tab and reload the page. You will see a list of files appear. Each of these is a seperate HTTP request. They include the original HTML document as well as any images, stylesheets or scripts the page requires. You can also see when the page requests more data from a server.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-timeline.ogg" -->
-### Chrome Developer tools: Network timeline
-![Chrome network timeline](images/chrome-dev-network-timeline.png)
-
-Note:
-The timeline shows when it loaded different resources and how long they took. If you have a really big script or image that is making everything slow to load you can see it here.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-requests.ogg" -->
-### Chrome Developer tools: Network requests
-![Chrome network requests](images/chrome-dev-network-requests.png)
-
-Note:
-The request window shows you all the requests made. It shows you the file or resource requested, the response code, what initiated the request, how big the file is and how long it took to download.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-details.ogg" -->
-### Chrome Developer tools: Network details
-![Chrome network details](images/chrome-dev-network-details.png)
-
-Note:
-The bottom panel tells you how big the page is and how long it took to download and load. What do you are the difference between Finish, DOMContentLoaded and Load?
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/web-console.ogg" -->
-### Chrome Developer tools: Web console
-![Chrome console](images/chrome-dev-console.png)
-
-Note:
-The console is where any page errors or javascript output appear. There probably isn't much for your pages. But this is really useful once you start using javascript. We'll come back to this later in the course.
-
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Chrome Developer tools: Activity
-* Open a favourite website with dev tools open
-* How big is the page?
-* How long did it take to download?
-* Did it download a lot of files or not many
-* Are there any errors or warnings in the console?
-* Have a look through the elements to learn the page structure
-* Report back to the class on what you find
-
-
-
-
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/atom-intro.ogg" -->
 ## Atom Editor
 ![Atom editor](images/Atom_editor_logo.svg)
@@ -198,112 +53,6 @@ Share what you found
 * Type in devdocs and install the package
 * Now go to your html document and select a tag name
 * Press ctl+alt+D to open the documentation for that tag from [https://devdocs.io](devdocs.io)
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-## HTML Validation
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/validate-why.ogg" -->
-### Why validate
-* Identify mistakes
-	* Typos
-	* Unclosed tags
-	* Missing doctype
-	* Weird stuff
-
-Note:
-If you make a mistake in your HTML the browser will guess what you were trying to do and show that. This means that sometimes you don’t notice if you forgot to close a tag or used an invalid property. Unfortunately, because the browsers guess what they think you’re trying to do it might not be what you intended and might not work the same in all browsers. To address this we can validate our HTML.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/validate-demo.ogg" -->
-<video>
-	<source data-src="videos/html-validator.webm" type="video/webm" />
-</video>
-
-Note:
-Here I'm validating my HTML using the W3C validator. You can see I've made some mistakes. I accidently included an extra < in an img tag and forgot to close some tags
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Validation Exercise
-* Visit [https://validator.w3.org/](https://validator.w3.org/)
-* Validate your page by direct input
-* Discuss what you found
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/semantic-intro.ogg" -->
-## Semantic HTML
-* HTML describes the structure of the page <!-- .element: class="fragment" data-fragment-index="1" -->
-* Semantic HTML adds meanining <!-- .element: class="fragment" data-fragment-index="1" -->
-* Not about look and feel <!-- .element: class="fragment" data-fragment-index="1" -->
-
-Note:
-HTML represents the content and structure of a page. We spend so much time thinking about what the page looks like that we sometimes forget this. But when writing HTML we shouldn’t be thinking about the visual layout so much as the structural layout.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/semantic-why.ogg" -->
-### Why do semantics matter
-* Bots and SEO
-* Vision impaired users
-* People with arthritis
-* Someone eating a sandwich
-* Developers picking up your code (you)
-
-Note:
-Not everyone looks at a page as we see it rendered. Just as not everyone navigates it with a keyboard and a mouse. A well structured page pages it easier to parse and navigate for all users. Some examples of users we might want to consider.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/semantic-elements-old.ogg" -->
-### Semantic elements
-Describe what is in the tag
-* form
-* img
-* table
-* ul
-
-Note:
-Semantic elements describe what sort of data is in the element. Some you might have seen include the form element, which says this is an input form, the image element which describes an image, table elements which tell us we're looking at tabular data and a ul element which describes a list of items where the order does not matter.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/semantic-elements-html5.ogg" -->
-### New HTML5 semantic elements
-* header
-* main
-* footer
-* nav
-* section
-* article
-
-Note:
-HTML5 bought us a lot of new semantic elements. The big changes are the structural elements that tells us where the content belongs in the page structure. What do you think these mean?
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Semantics Activity
-* Have a look at the element list at [https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
-* Look at the flowchart at [http://html5doctor.com/downloads/h5d-sectioning-flowchart.png](http://html5doctor.com/downloads/h5d-sectioning-flowchart.png)
-* Update your HTML to use the new semantic elements
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Questions
-* When do you think you should use a div element?
-* How should you name a new section?
-* What do you think about the new semantic elements?
-	* Too many
-	* Not enouch
-	* Too confusing?
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Final thoughs
-<blockquote cite="http://html5doctor.com/lets-talk-about-semantics/">
-	<p>Don&#39;t think of &lt;article&gt; as a magazine article. Think of it as an article of clothing, an independent entity that can be arranged in conjunction with other articles of clothing, but is a complete thing in itself.</p>
-	<footer><a href="http://html5doctor.com/lets-talk-about-semantics/">Bruce Lawson</a></footer>
-</blockquote>
 
 
 
@@ -423,3 +172,202 @@ When you finish you'll need to commit to save your work and push to send them to
 	* Keep them small so it is easy to see what has changed
 	* It is better to commit too much rather than not enough
 	* Try not to break things
+
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## GitHub Pages
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Free hosting for your repository
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### GitHub Settings
+Open your GitHub settings by clicking the cog in the top menu bar
+![GitHub menu bar showing settings on the left](images/github-settings.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### GitHub Pages Settings
+Scroll down to find the GitHub Pages section
+![Settings for GitHub Pages before setup](images/github-settings-pages.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Select a branch
+Select the branch you want to publish and hit save
+![Branch dialog for GitHub pages setup](images/github-settings-pages-dialog.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Pick a theme
+Select the themes dialog and pick a theme to use. This theme will be used when your markdown is converted to HTML.
+![Theme list when setting up GitHub pages](images/github-pages-themes.png)
+Markdown is a great way to represent your project documentation.
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### All done!
+Pat yourself on the back and enjoy your website.
+![Settings for GitHub pages after setup](images/github-settings-pages-complete.png)
+It is a good idea to enforce HTTPS unless you have a specific need not to.
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+## Browser and development tools
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/browser-intro.ogg" -->
+Plenty of good brower choices
+
+![Firefox logo](images/Firefox_Logo,_2017.svg) <!-- .element: class="browser-icon" -->
+![Google chrome logo](images/Google_Chrome_icon_2011.svg) <!-- .element: class="browser-icon" -->
+![Microsoft edge logo](images/Microsoft_Edge_logo.svg) <!-- .element: class="browser-icon" -->
+
+Note:
+As you’re likely aware the different major browsers have some differences in the features they support and performance. Everyone has their own preferences and so in the workplace we need to test with all the major browsers.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/browser-chrome.ogg" -->
+We're going to use chrome
+
+![Disabled Firefox logo](images/Firefox_Logo,_2017.svg) <!-- .element: class="browser-icon browser-icon_disabled" -->
+![Selected Google chrome logo](images/Google_Chrome_icon_2011.svg) <!-- .element: class="browser-icon browser-icon_selected" -->
+![Disabled Microsoft edge logo](images/Microsoft_Edge_logo.svg) <!-- .element: class="browser-icon browser-icon_disabled" -->
+
+* Modern feature set <!-- .element: class="fragment" data-fragment-index="1" -->
+* Great development tools <!-- .element: class="fragment" data-fragment-index="1" -->
+
+Note:
+To make things simple, we’re just going to use Chrome for this class. Chrome has a very modern feature set and great development tools that will make our work much easier. Let’s get to know the features.
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+## Chrome Lighthouse
+* [Install Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
+* Run lighthouse on your site from github pages
+* [More details](https://developers.google.com/web/tools/lighthouse/)
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+## HTML Validation
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/validate-why.ogg" -->
+### Why validate
+* Identify mistakes
+	* Typos
+	* Unclosed tags
+	* Missing doctype
+	* Weird stuff
+
+Note:
+If you make a mistake in your HTML the browser will guess what you were trying to do and show that. This means that sometimes you don’t notice if you forgot to close a tag or used an invalid property. Unfortunately, because the browsers guess what they think you’re trying to do it might not be what you intended and might not work the same in all browsers. To address this we can validate our HTML.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/validate-demo.ogg" -->
+<video>
+	<source data-src="videos/html-validator.webm" type="video/webm" />
+</video>
+
+Note:
+Here I'm validating my HTML using the W3C validator. You can see I've made some mistakes. I accidently included an extra < in an img tag and forgot to close some tags
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Validation Exercise
+* Visit [https://validator.w3.org/](https://validator.w3.org/)
+* Validate your page by direct input
+* Fix any issues you can
+* Commit you changes to github with a meaningful commit message
+* Discuss what you found
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/semantic-intro.ogg" -->
+## Semantic HTML
+* HTML describes the structure of the page <!-- .element: class="fragment" data-fragment-index="1" -->
+* Semantic HTML adds meanining <!-- .element: class="fragment" data-fragment-index="1" -->
+* Not about look and feel <!-- .element: class="fragment" data-fragment-index="1" -->
+
+Note:
+HTML represents the content and structure of a page. We spend so much time thinking about what the page looks like that we sometimes forget this. But when writing HTML we shouldn’t be thinking about the visual layout so much as the structural layout.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/semantic-why.ogg" -->
+### Why do semantics matter
+* Bots and SEO
+* Vision impaired users
+* People with arthritis
+* Someone eating a sandwich
+* Developers picking up your code (you)
+
+Note:
+Not everyone looks at a page as we see it rendered. Just as not everyone navigates it with a keyboard and a mouse. A well structured page pages it easier to parse and navigate for all users. Some examples of users we might want to consider.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/semantic-elements-old.ogg" -->
+### Semantic elements
+Describe what is in the tag
+* form
+* img
+* table
+* ul
+
+Note:
+Semantic elements describe what sort of data is in the element. Some you might have seen include the form element, which says this is an input form, the image element which describes an image, table elements which tell us we're looking at tabular data and a ul element which describes a list of items where the order does not matter.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/semantic-elements-html5.ogg" -->
+### New HTML5 semantic elements
+* header
+* main
+* footer
+* nav
+* section
+* article
+
+Note:
+HTML5 bought us a lot of new semantic elements. The big changes are the structural elements that tells us where the content belongs in the page structure. What do you think these mean?
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Semantics Activity
+* Have a look at the element list at [https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
+* Look at the flowchart at [http://html5doctor.com/downloads/h5d-sectioning-flowchart.png](http://html5doctor.com/downloads/h5d-sectioning-flowchart.png)
+* Update your HTML to use the new semantic elements
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Questions
+* When do you think you should use a div element?
+* How should you name a new section?
+* What do you think about the new semantic elements?
+	* Too many
+	* Not enouch
+	* Too confusing?
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Final thoughs
+<blockquote cite="http://html5doctor.com/lets-talk-about-semantics/">
+	<p>Don&#39;t think of &lt;article&gt; as a magazine article. Think of it as an article of clothing, an independent entity that can be arranged in conjunction with other articles of clothing, but is a complete thing in itself.</p>
+	<footer><a href="http://html5doctor.com/lets-talk-about-semantics/">Bruce Lawson</a></footer>
+</blockquote>
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+## Final Activity
+* Update your site to include semantic elements
+* Commit your changes to git with the message "Use semantic elements"
+* Test your site on lighthouse
+	* Review the accessibility section
+	* Can you make any changes to improve accessibility?
+

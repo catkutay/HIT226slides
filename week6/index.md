@@ -4,47 +4,6 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-## GitHub Pages
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Free hosting for your repository
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### GitHub Settings
-Open your GitHub settings by clicking the cog in the top menu bar
-![GitHub menu bar showing settings on the left](images/github-settings.png)
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### GitHub Pages Settings
-Scroll down to find the GitHub Pages section
-![Settings for GitHub Pages before setup](images/github-settings-pages.png)
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Select a branch
-Select the branch you want to publish and hit save
-![Branch dialog for GitHub pages setup](images/github-settings-pages-dialog.png)
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Pick a theme
-Select the themes dialog and pick a theme to use. This theme will be used when your markdown is converted to HTML.
-![Theme list when setting up GitHub pages](images/github-pages-themes.png)
-Markdown is a great way to represent your project documentation.
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### All done!
-Pat yourself on the back and enjoy your website.
-![Settings for GitHub pages after setup](images/github-settings-pages-complete.png)
-It is a good idea to enforce HTTPS unless you have a specific need not to.
-
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Javascript
 
 
