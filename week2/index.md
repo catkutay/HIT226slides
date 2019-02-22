@@ -8,251 +8,6 @@ Without talking write down the top thing you learned last week
 
 
 
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/dom-inspector-intro.ogg" -->
-### Chrome Developer tools: DOM Inspector
-<video>
-	<source data-src="videos/open-dev-tools.webm" type="video/webm" />
-</video>
-
-Note:
-Click the elements tab and look at the contents. It should look just like HTML you wrote for the exercise. This is not the same as the source code though as it represents the elements currently on the page. If you used javascript to add or remove an element it would appear here. This is a representation of the Document Object Model or DOM. You can just think of the DOM as how the browser keeps track of what’s on the page.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/dom-inspector-explore.ogg" -->
-### Chrome Developer tools: DOM Inspector
-<video>
-	<source data-src="videos/dev-tools-elements.webm" type="video/webm" />
-</video>
-
-Note:
-Expand the page elements if they are not already by clicking on the little arrows. Notice how the view of your page highlights the element you are currently hovering over? This makes it easy to see where the element sits as well as any padding, margins or borders. On the right you can see the CSS for the element.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/dom-inspector-demo.ogg" -->
-### Chrome Developer tools: DOM Inspector
-<video>
-	<source data-src="videos/dev-tools-edit-style.webm" type="video/webm" />
-</video>
-
-Note:
-You can do quite a lot from the elements tab. Here you can see me selecting a heading on the page, changing the font size and giving it a new colour. It’s a really easy way to change page elements around and see how they’ll look.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Chrome Developer tools: DOM Inspector
-* Explore your dom
-* Give some elements a border to see where they sit
-	<pre><code class="css">border: 1px solid black;</code></pre>
-* Drag some elements in to others
-* Can you edit the text of a heading?
-* What happens when you refresh? Why?
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-intro.ogg" -->
-### Chrome Developer tools: Network
-* View all HTTP requests the page makes <!-- .element: class="fragment" data-fragment-index="1" -->
-* View files downloaded <!-- .element: class="fragment" data-fragment-index="2" -->
-* View REST requests and responses <!-- .element: class="fragment" data-fragment-index="3" -->
-
-Note:
-The network tab shows us all the network requests the page makes. We can see all the files the page needs, including images, css and javascript as well as any requests made by javascript to load or send additional data.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Chrome Developer tools: Network
-<video>
-	<source data-src="videos/dev-tools-network.webm" type="video/webm" />
-</video>
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-usage.ogg" -->
-### Chrome Developer tools: Network
-![Chrome network tab](images/chrome-dev-network.png)
-
-Note:
-Open the network tab and reload the page. You will see a list of files appear. Each of these is a seperate HTTP request. They include the original HTML document as well as any images, stylesheets or scripts the page requires. You can also see when the page requests more data from a server.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-timeline.ogg" -->
-### Chrome Developer tools: Network timeline
-![Chrome network timeline](images/chrome-dev-network-timeline.png)
-
-Note:
-The timeline shows when it loaded different resources and how long they took. If you have a really big script or image that is making everything slow to load you can see it here.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-requests.ogg" -->
-### Chrome Developer tools: Network requests
-![Chrome network requests](images/chrome-dev-network-requests.png)
-
-Note:
-The request window shows you all the requests made. It shows you the file or resource requested, the response code, what initiated the request, how big the file is and how long it took to download.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/network-details.ogg" -->
-### Chrome Developer tools: Network details
-![Chrome network details](images/chrome-dev-network-details.png)
-
-Note:
-The bottom panel tells you how big the page is and how long it took to download and load. What do you are the difference between Finish, DOMContentLoaded and Load?
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/web-console.ogg" -->
-### Chrome Developer tools: Web console
-![Chrome console](images/chrome-dev-console.png)
-
-Note:
-The console is where any page errors or javascript output appear. There probably isn't much for your pages. But this is really useful once you start using javascript. We'll come back to this later in the course.
-
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Chrome Developer tools: Activity
-* Open a favourite website with dev tools open
-* How big is the page?
-* How long did it take to download?
-* Did it download a lot of files or not many
-* Are there any errors or warnings in the console?
-* Have a look through the elements to learn the page structure
-* Report back to the class on what you find
-
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-## Accessibility
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Tables
-* Present tabular data
-* Easy to scan by column or row
-* Must be properly marked up for screen readers and other tools
-* &lt;caption&gt; immediatly after &lt;table&gt;
-* Headers should be marked `scope="col"` or `scope="row"`
-
-Note:
-Data tables are used to present tabular data. They are easy to sighted users to scan by column or row. They must be clearly marked up for tools like screen readers to read them properly. 
-Captions are added immediately after the table is opened
-Headers should be marked with scole=”col” or scope=”row”. This makes it clear if the header is for the row or column. 
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-```html
-<table>
-<caption>2018 Oscar Winders</caption>
-
-<tr>
-<th scope="col">Name</th>
-<th scope="col">Category</th>
-<th scope="col">Director</th>
-</tr>
-
-<tr>
-<th scope="row">Guillermo del Toro</th>
-<td>Best Picture</td>
-<td>The Shape of Water</td>
-</tr>
-
-<tr>
-<th scope="row">Get Out</th>
-<td>Best original screenplay</td>
-<td>Jordan Peele</td>
-</tr>
-
-</table>
-```
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Forms
-* Logical order
-* Test with tab navigation
-* Break large forms into groups with &lt;fieldset&gt;
-* Input should always have a label
-* Do not use placeholder instead of a label
-
-Note:
-Forms should be structured in a logical order. It is alright to change the order a little with styling (e.g. right to left or columns) but it should still be immediately intuitive which way the form flows. Try using tab to navigate the form to ensure it makes sense. Large forms should be broken into logical group using fieldsets. 
-All inputs should have a label correctly attached using the for attribute. NEVER use placeholder instead of a label. Placeholder should be used to provide examples of expected input if the format is unclear.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Colour contrast
-* Vision problems are incredibly common
-* Red/green colour blindness affects ~8% of Northern European Men
-* Strong contrast important for everyone
-
-Note:
-How many people wear glasses here?
-Red green colour blindness affect 8% of Northern European Men (https://nei.nih.gov/health/color_blindness/facts_about) although it varies by ethnicity. 
-Only around 1 in 100- eskimos are colour blind (http://www.colour-blindness.com/general/prevalence/)
-Blue colour blindness is less common.
-Strong contrast is not just for colourblind people though. It is hard for everyone to read with poor contrast and especially hard for people with failing vision.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-![normal](images/vision-normal.png) <!-- .element: class="screenshot-small" -->
-![deureranomaly](images/vision-deureranomaly.png) <!-- .element: class="screenshot-small fragment" data-fragment-index="1" -->
-![deuteranopia](images/vision-deuteranopia.png) <!-- .element: class="screenshot-small fragment" data-fragment-index="1" -->
-![protanopia](images/vision-protanopia.png) <!-- .element: class="screenshot-small fragment" data-fragment-index="1" -->
-![tritanopia](images/vision-tritanopia.png) <!-- .element: class="screenshot-small fragment" data-fragment-index="1" -->
-![monochrome](images/vision-monochrome.png) <!-- .element: class="screenshot-small fragment" data-fragment-index="1" -->
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-![blurry image](images/vision-blur.png)
-* How many people need glasses? <!-- .element class="fragment" data-fragment-index="1" -->
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Activity: Fix the contrast
-* Download template from learnline
-* Fix colour contrast
-	* Check using online tools
-	* http://leaverou.github.io/contrast-ratio/
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Keyboard Navigation
-* Must be possible to navigate without a mouse
-* Try using tab
-* Focus must be visible. Do not remove :focus styling
-* Use correct elements to get default focus
-* Can change focus with tabindex but be careful
-
-Note:
-Many users with mobility difficulties need to navigate without a mouse. You should be able to tab through the key elements of a page. It is also important to make it clear which elements are focused. 
-Tabindex allows you to change tab focus. It can be useful but it is easy to screw up. It’s better to use the correct elements where possible.
-:focus can help you show when an element is focused. You should not remove the browser default unless you are making it clearer.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Media
-* Videos should have subtitles
-* Audio should have transcripts
-
-Note:
-Videos should have subtitles. Youtube offers same great predictive tools that help you get started making subtitles. Audio content should have a text transcript available.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Images
-* Use the alt tag!!!!!
-* If the image doesn't add content use CSS
-* Can caption diagrams using &lt;figure&gt; and &lt;figcaption&gt;
-
-Note:
-All content images require an alt tag to describe the image. If the image is not content it is usually better to include it using CSS. You can add captions using figure and figcaption. We'll talk about them later.
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q_ATY9gimOM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-
-
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
 ## Structural elements
 
@@ -356,113 +111,236 @@ Not really a structural element. But worth mentioning all the same. You are like
 
 
 
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-## Document Object Model
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## GitHub Pages
 
 
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Free hosting for your repository
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### GitHub Settings
+Open your GitHub settings by clicking the cog in the top menu bar
+![GitHub menu bar showing settings on the left](images/github-settings.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### GitHub Pages Settings
+Scroll down to find the GitHub Pages section
+![Settings for GitHub Pages before setup](images/github-settings-pages.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Select a branch
+Select the branch you want to publish and hit save
+![Branch dialog for GitHub pages setup](images/github-settings-pages-dialog.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Pick a theme
+Select the themes dialog and pick a theme to use. This theme will be used when your markdown is converted to HTML.
+![Theme list when setting up GitHub pages](images/github-pages-themes.png)
+Markdown is a great way to represent your project documentation.
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### All done!
+Pat yourself on the back and enjoy your website.
+![Settings for GitHub pages after setup](images/github-settings-pages-complete.png)
+It is a good idea to enforce HTTPS unless you have a specific need not to.
+
+
+
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### What is the DOM?
-* Not HTML
-* What you see in dev tools
-* Browser representation of the document and elements
-* Can be modified after page load
+## Browser and development tools
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/browser-intro.ogg" -->
+Plenty of good brower choices
+
+![Firefox logo](images/Firefox_Logo,_2017.svg) <!-- .element: class="browser-icon" -->
+![Google chrome logo](images/Google_Chrome_icon_2011.svg) <!-- .element: class="browser-icon" -->
+![Microsoft edge logo](images/Microsoft_Edge_logo.svg) <!-- .element: class="browser-icon" -->
 
 Note:
-M is not the HTML you write or get from view source. But that is used to create it.
-The DOM is what you see in dev tools. It looks like HTML but that’s just a way to represent it.
-The DOM is the browser representation of the document and the elements that make it up. The main difference between the DOM and your HTML is that the DOM can be manipulated after the page has loaded. We’ll go into that when we get to javascript. For now, let’s talk about the structure
+As you’re likely aware the different major browsers have some differences in the features they support and performance. Everyone has their own preferences and so in the workplace we need to test with all the major browsers.
 
 
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Parents, Children and Siblings
-![UL parent and li children](images/parent-child-elems.png )
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/browser-chrome.ogg" -->
+We're going to use chrome
 
-Note:
-When we “walk” or traverse the DOM we walk down to the “children” of an element, across to the “siblings” and up to the “parents”. We also use these terms when we talk about CSS selectors so it is worth understanding the terminology.
+![Disabled Firefox logo](images/Firefox_Logo,_2017.svg) <!-- .element: class="browser-icon browser-icon_disabled" -->
+![Selected Google chrome logo](images/Google_Chrome_icon_2011.svg) <!-- .element: class="browser-icon browser-icon_selected" -->
+![Disabled Microsoft edge logo](images/Microsoft_Edge_logo.svg) <!-- .element: class="browser-icon browser-icon_disabled" -->
 
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-* Common terminology
-	* "walk up" to parents
-	* "walk down" to children
-	* "walk across" to siblings
-
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-## Tree structure
-![DOM Model](https://upload.wikimedia.org/wikipedia/commons/5/5a/DOM-model.svg)
-<p class="attribution">By Birger Eriksson (Own work) [<a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>], via Wikimedia Commons</a>
+* Modern feature set <!-- .element: class="fragment" data-fragment-index="1" -->
+* Great development tools <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Note:
-These parent relationships make for an intuitive tree structure. You can think of the DOM as a tree of nodes, with document as the root node.Under document you would find html which would have the body and head nodes branching off it. Lets draw this code as a DOM tree
+To make things simple, we’re just going to use Chrome for this class. Chrome has a very modern feature set and great development tools that will make our work much easier. Let’s get to know the features.
 
-
-<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-* A tree of nodes
-* Document is the root node
-* html under document
-* body under html
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Activity: Draw the tree
-```
-<html>
-	<head>
-		<title>My page</title>
-	</head>
-	<body>
-		<main>
-			<article>
-				<h2>My article</h2>
-				<section>
-					<h2>My section</h2>
-					<p>My text</p>
-				</section>
-			</article>
-		</main>
-	</body>
-</html>
-```
+## Chrome Lighthouse
+<video>
+	<source data-src="videos/lighthouse.webm " type="video/webm" />
+</video>
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Rendered
-![Rendered parent and children elems](images/rendered-parent-child.png)
-* Children usually appear inside their parents
-* Like boxes in boxes
+## Test your site
+* [Install Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
+* Run lighthouse on your site from github pages
+* [More details](https://developers.google.com/web/tools/lighthouse/)
+
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+## Accessibility
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Tables
+* Present tabular data
+* Easy to scan by column or row
+* Must be properly marked up for screen readers and other tools
+* &lt;caption&gt; immediatly after &lt;table&gt;
+* Headers should be marked `scope="col"` or `scope="row"`
+
 
 Note:
-As a general rule (with lots of exceptions) each element should appear inside the parent. Yes, it is easy to make it appear outside with CSS but the are usually logically nested as content. You could think of them as boxes inside boxes. So this DOM tree will look like this
+Data tables are used to present tabular data. They are easy to sighted users to scan by column or row. They must be clearly marked up for tools like screen readers to read them properly. 
+Captions are added immediately after the table is opened
+Headers should be marked with scole=”col” or scope=”row”. This makes it clear if the header is for the row or column. 
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Draw the page
-```
-<html>
-	<head>
-		<title>My page</title>
-	</head>
-	<body>
-		<main>
-			<article>
-				<h2>My article</h2>
-				<section>
-					<h2>My section</h2>
-					<p>My text</p>
-				</section>
-			</article>
-		</main>
-	</body>
-</html>
-```
-
-Note::
-It’s hard work to make a page if you just use trial and error. Fortunately the DOM renders pretty intuitively. Have a look at this page and try to draw it it groups of threes. Talk about why you think it works. We’ll bring some up to look at when you finish.
-
+#### Tables: Further reading
+* [https://www.accessibility-developer-guide.com/examples/tables/](https://www.accessibility-developer-guide.com/examples/tables/)
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-## CSS
+```html
+<table>
+<caption>2018 Oscar Winders</caption>
+
+<tr>
+<th scope="col">Name</th>
+<th scope="col">Category</th>
+<th scope="col">Director</th>
+</tr>
+
+<tr>
+<th scope="row">Guillermo del Toro</th>
+<td>Best Picture</td>
+<td>The Shape of Water</td>
+</tr>
+
+<tr>
+<th scope="row">Get Out</th>
+<td>Best original screenplay</td>
+<td>Jordan Peele</td>
+</tr>
+
+</table>
+```
 
 
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Forms
+* Logical order
+* Test with tab navigation
+* Break large forms into groups with &lt;fieldset&gt;
+* Input should always have a label
+* Do not use placeholder instead of a label
+
+Note:
+Forms should be structured in a logical order. It is alright to change the order a little with styling (e.g. right to left or columns) but it should still be immediately intuitive which way the form flows. Try using tab to navigate the form to ensure it makes sense. Large forms should be broken into logical group using fieldsets. 
+All inputs should have a label correctly attached using the for attribute. NEVER use placeholder instead of a label. Placeholder should be used to provide examples of expected input if the format is unclear.
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+#### Form activity
+* Fix the form on codepen
+* [https://codepen.io/elvey/pen/OdePrM](https://codepen.io/elvey/pen/OdePrM)
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+#### Forms: Further reading
+[https://www.accessibility-developer-guide.com/examples/forms/](https://www.accessibility-developer-guide.com/examples/forms/)
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Colour contrast
+* Vision problems are incredibly common
+* Red/green colour blindness affects ~8% of Northern European Men
+* Strong contrast important for everyone
+
+Note:
+How many people wear glasses here?
+Red green colour blindness affect 8% of Northern European Men (https://nei.nih.gov/health/color_blindness/facts_about) although it varies by ethnicity. 
+Only around 1 in 100- eskimos are colour blind (http://www.colour-blindness.com/general/prevalence/)
+Blue colour blindness is less common.
+Strong contrast is not just for colourblind people though. It is hard for everyone to read with poor contrast and especially hard for people with failing vision.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+![normal](images/vision-normal.png) <!-- .element: class="screenshot-small" -->
+![deureranomaly](images/vision-deureranomaly.png) <!-- .element: class="screenshot-small fragment" data-fragment-index="1" -->
+![deuteranopia](images/vision-deuteranopia.png) <!-- .element: class="screenshot-small fragment" data-fragment-index="1" -->
+![protanopia](images/vision-protanopia.png) <!-- .element: class="screenshot-small fragment" data-fragment-index="1" -->
+![tritanopia](images/vision-tritanopia.png) <!-- .element: class="screenshot-small fragment" data-fragment-index="1" -->
+![monochrome](images/vision-monochrome.png) <!-- .element: class="screenshot-small fragment" data-fragment-index="1" -->
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+![blurry image](images/vision-blur.png)
+* How many people need glasses? <!-- .element class="fragment" data-fragment-index="1" -->
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Activity: Fix the contrast
+* Download template from learnline
+* Fix colour contrast
+	* Check using online tools
+	* http://leaverou.github.io/contrast-ratio/
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Keyboard Navigation
+* Must be possible to navigate without a mouse
+* Try using tab
+* Focus must be visible. Do not remove :focus styling
+* Use correct elements to get default focus
+* Can change focus with tabindex but be careful
+
+Note:
+Many users with mobility difficulties need to navigate without a mouse. You should be able to tab through the key elements of a page. It is also important to make it clear which elements are focused. 
+Tabindex allows you to change tab focus. It can be useful but it is easy to screw up. It’s better to use the correct elements where possible.
+:focus can help you show when an element is focused. You should not remove the browser default unless you are making it clearer.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Media
+* Videos should have subtitles
+* Audio should have transcripts
+
+Note:
+Videos should have subtitles. Youtube offers same great predictive tools that help you get started making subtitles. Audio content should have a text transcript available.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Images
+* Use the alt tag!!!!!
+* If the image doesn't add content use CSS
+* Can caption diagrams using &lt;figure&gt; and &lt;figcaption&gt;
+
+Note:
+All content images require an alt tag to describe the image. If the image is not content it is usually better to include it using CSS. You can add captions using figure and figcaption. We'll talk about them later.
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q_ATY9gimOM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
