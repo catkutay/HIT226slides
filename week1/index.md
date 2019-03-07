@@ -109,8 +109,7 @@ Github is a public git server. We're going to use it in this course to track our
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
 ### Activity: Setup a git repository
 * Register for github
-* Create a new repository for the unit
-* Create a folder in the repository for week 1
+* Create a new repository for your prep for unit
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-wingit.ogg" -->
@@ -155,11 +154,11 @@ When you finish you'll need to commit to save your work and push to send them to
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
 ### Activity: Git local repository
-* Clone the project to your local machine
+* Clone your repository to your local machine
 	* You can get the address from the green clone button on github
-* Copy your html and any required files to the week one directory
+* Copy your prep for unit site to the directory
 * Add the new files to git
-* Commit the staged files with the comment "Add week one files"
+* Commit the staged files with the comment "add initial files"
 * Push your code and check it appears on the github website
 
 
@@ -170,7 +169,7 @@ When you finish you'll need to commit to save your work and push to send them to
 * A commit should be self-contained
 	* If you are editing multiple files, include them all
 	* Keep them small so it is easy to see what has changed
-	* It is better to commit too much rather than not enough
+	* It is better to commit too frequently rather than not enough
 	* Try not to break things
 
 
