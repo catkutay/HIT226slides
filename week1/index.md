@@ -286,6 +286,4 @@ HTML5 bought us a lot of new semantic elements. The big changes are the structur
 ## Final Activity
 * Update your site to include semantic elements
 * Commit your changes to git with the message "Use semantic elements"
-* Test your site on lighthouse
-	* Review the accessibility section
-	* Can you make any changes to improve accessibility?
+* Run your code through the [W3C validator](https://validator.w3.org/) again
