@@ -40,7 +40,7 @@ It is also really customisable using web languages. You can change the whole app
 * Explore atom features
 	* Open settings menu (ctl+,)
 	* Explore features in the command palette (ctl+shift+p)
-	* Explore keyboard shortcuts from a list like [https://gist.github.com/chrissimpkins/5bf5686bae86b8129bee](https://gist.github.com/chrissimpkins/5bf5686bae86b8129bee)
+	* Explore keyboard shortcuts from a list like [https://github.com/nwinkler/atom-keyboard-shortcuts](https://github.com/nwinkler/atom-keyboard-shortcuts)
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
@@ -67,7 +67,7 @@ Share what you found
 * Distributed
 
 Note:
-Git is a distributed source and version control platform. It tracks changes to our files and stores those changes on a server. 
+Git is a distributed source and version control platform. It tracks changes to our files and stores those changes on a server.
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-why.ogg" -->
@@ -290,4 +290,3 @@ HTML5 bought us a lot of new semantic elements. The big changes are the structur
 * Test your site on lighthouse
 	* Review the accessibility section
 	* Can you make any changes to improve accessibility?
-
