@@ -303,7 +303,7 @@ Strong contrast is not just for colourblind people though. It is hard for everyo
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
 ### Activity: Fix the contrast
-* Download template from learnline
+* Clone the repository from https://github.com/HIT226/lawfirm-exercise
 * Fix colour contrast
 	* Check using online tools
 	* http://leaverou.github.io/contrast-ratio/
