@@ -210,7 +210,6 @@ To make things simple, we’re just going to use Chrome for this class. Chrome h
 * &lt;caption&gt; immediatly after &lt;table&gt;
 * Headers should be marked `scope="col"` or `scope="row"`
 
-
 Note:
 Data tables are used to present tabular data. They are easy to sighted users to scan by column or row. They must be clearly marked up for tools like screen readers to read them properly. 
 Captions are added immediately after the table is opened
