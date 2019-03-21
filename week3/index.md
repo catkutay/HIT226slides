@@ -233,12 +233,9 @@ It’s hard work to make a page if you just use trial and error. Fortunately the
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-## Quiz!
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Do you have style?
-* Open up the hair salon page
+* clone the the [hair salon repository](https://github.com/HIT226/hairstyle-salon)
+	* Open in your browser
 	* What does it look like?
 	* Attach a stylesheet
 
@@ -493,14 +490,6 @@ input::active {} /* The currently active input element */
 * Avoid ID selectors
 
 
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Activity: Best Practices
-* Download the best practice sample file
-* Open CSS and HTML
-* Also view in browser
-* Does it follow best practices?
-
-
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Our CSS Best Practices
@@ -592,6 +581,8 @@ blockquote: {
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Activity: How good is the CSS
-* Go back to the example
+* Clone the [best practice sample files](https://github.com/HIT226/Week-3-Best-Practice)
+* Open CSS and HTML
+* Also view in browser
 * How well is it written?
 * Does it use any of the last 6 tips?
