@@ -90,13 +90,11 @@ Note:
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Activity
-* Open a favourite website
-* Open dev tools and explore the box-layout for an element
-* Set box-sizing to content-box and set the element size
-	* How big is it
-* Set box-sizing to border-box and set size
-	* Why is it different?
-
+* Open the [MDN box sizing guide](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+* Examine the interactive CSS box sizing demo
+* Open the bottom example in CodePen or JSFiddle
+	* Change the boxes between content-box and border-box
+	* Why do they chance so much?
 
 
 
@@ -182,6 +180,44 @@ What colour is our first li?
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Case 4
+```html
+<ul class="nav">
+	<li class="test">Colour test</li>
+	<li class="test not_me">Colour test</li>
+</ul>
+```
+
+```css
+.nav li.test{ color: blue; }
+.nav > *:not(.not_me){ color: red; }
+li.test { color: black; }
+li:first-child { color:green; }
+```
+
+Now what colour is our first li?
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Case 5
+```html
+<ul class="nav">
+	<li class="test">Colour test</li>
+	<li class="test not_me">Colour test</li>
+</ul>
+```
+
+```css
+.nav li.test{ color: blue; }
+.nav > *:not(.not_me){ color: red; }
+li.test { color: black; }
+li.test:first-child { color:green; }
+```
+
+Now what colour is our first li?
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Troubleshooting specificity
 * Check the styles in dev tools
 * Look at the order styles have been applied
@@ -249,16 +285,6 @@ p {color: red;}
 	* https://css-tricks.com/css-media-queries/ 
 	* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries 
 * What can you tell me about CSS3 media queries?
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Task: Getting started with media queries
-* download the HTML Boilerplate From Github
-	* https://github.com/HIT226/HTML-Boilerplate 
-* Open typography.html in your browser
-* Open main.css in your editor
-* Add a media query to make all the text white and the background black, when the screen is wider than 400px
-* Experiment with other styles and media queries
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
@@ -333,6 +359,16 @@ p {
 	/* mobile styles */
 }
 ```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Task: Getting started with media queries
+* download the HTML Boilerplate From Github
+	* https://github.com/HIT226/HTML-Boilerplate 
+* Open typography.html in your browser
+* Open main.css in your editor
+* Add a media query to make all the text white and the background black, when the screen is wider than 600px
+* Experiment with other styles and media queries
 
 
 
