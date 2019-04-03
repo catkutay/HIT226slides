@@ -12,6 +12,98 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## MVP
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Not Most Valuable Player
+
+![MVP Award](https://upload.wikimedia.org/wikipedia/commons/a/a2/Tarik_Cohen_Celebration_Bowl_Offensive_MVP_Award.jpg)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Minimum Viable Product
+![Minimum Viable Product](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/From_minimum_viable_product_to_more_complex_product.png/800px-From_minimum_viable_product_to_more_complex_product.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Build and test your website in pieces
+* Don't build everything at once
+* Build enough to test an idea with your users
+* If you test lots of little bits you can quickly identify what works and what doesn't
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### What is an MVP
+* The fastest product you can develop to get meaningful user feedback
+* Additional features are developed only after testing the core functionality
+* What you learn from your MVP guides further product development
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Leave off anything not required
+Only include what is absolutely necessecary to get user feedback without upsetting users
+
+Leave off anything not critical
+* Admin functions
+* Fancy navigation
+* Account management
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### LeanUX: How to create an MVP
+1. What is the most important thing to learn first?
+2. What is the least amount of work to learn that?
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Your turn
+* Read the section [Creating an MVP](https://online.cdu.edu.au/bbcswebdav/pid-2721761-dt-content-rid-10170704_2/xid-10170704_2)
+* What questions should you ask?
+* Can you answer these for your websites?
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### How I develop an MPV
+* List _all_ the functionality or user goals you can think of
+* Sort it into categories of importance
+* Look at the most important category
+	* What do you absolutely need for people to try it out
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Be brutal
+Just because something isn't MVP doesn't mean it will not get done
+
+If you are only going to make the MVP then stop, is it worth investing any time into?
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Examples of an MVP
+* Landing page - just the front page to test engagement
+* Wizard of oz - looks like the real thing but the back-end is fake
+* Prototype - A quick mock-up of the real user interaction
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### My stories
+* A successful prototype
+* A not-so-successful trial
+
+Note:
+I worked on a number of projects last year. But I'm going to talk about two of them. 
+One of them was an application to prompt users to complete regular small quizzes on the material they are learning. A target audience was identified and we set to work building it. When the target audience was no longer interested we switched to a different target. In the end they didn't use it. We spent an enormous amount of time building an application that nobody uses. It is reasonable to say that one or more of our assumptions were wrong. But we never found out about it until we were already comitted.
+On another occasion we were asked to create augmented reality tools to teach dynamics, or the physics of moving objects. We quickly put together a crude prototype to test some 3D models and students responded well to them. We then put them into a very simple augmented reality application and students didn't engage with them. We quickly found that the assumptions behind agumented reality were false and we went on to develop interactive worksheets with the 3D models.
+One project was completed in 8 weeks and is still used. The other was completed in over 6 months and has never had much use.
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Another look
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jHyU54GhfGs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### What is javascript
 * Scripting language
 	* No need to compile
