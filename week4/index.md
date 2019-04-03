@@ -341,7 +341,9 @@ p {
 }
 
 @media(min-width: 768px) {
-	font-sise: 20px;
+	p {
+		font-sise: 20px;
+	}
 }
 ```
 
