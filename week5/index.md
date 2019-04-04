@@ -2,6 +2,10 @@
 # <span>Skill Up:</span> <span>Code</span>
 
 
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## A quick quiz
+
+
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Material cards
@@ -224,6 +228,14 @@ Larger, more complex parts of the page. They should be made of elements and may 
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Existing component libraries
+* [Bootstrap](https://getbootstrap.com/docs/4.3/components/alerts/)
+* [Zurb Foundation](https://foundation.zurb.com/sites/docs/kitchen-sink.html)
+* [Australian Government](https://designsystem.gov.au/components/)
+* [CDU](http://www.cdu1prdweb1.cdu.edu.au/styleguide/)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Activity
 * Look at your site
 * Does it appear to follow a consistant design?
@@ -436,3 +448,48 @@ transition-delay: 0s, 1s 2s;
 * What can you make them do?
 * You can change the transition for all boxes in .box or address individual boxes using .box[:nth-child(x)](https://developer.mozilla.org/en-US/docs/Web/CSS/%3Anth-child)
 * Add/remove boxes for better effect and share your favourite in learnline
+
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## Prac4
+* [Build a component-based design](https://online.cdu.edu.au/bbcswebdav/pid-2721700-dt-content-rid-11324544_2/xid-11324544_2)
+* [Criteria](https://online.cdu.edu.au/bbcswebdav/pid-2721700-dt-content-rid-11324556_2/xid-11324556_2)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### As a team
+* Create a base style and element styling for your minisite
+* Use your personas and feature lists as a guide
+* What colours and fonts will you use?
+* How should base elements like headings and links look?
+* Create a stylesheet and HTML page to demonstrate
+* Commit to a new team git repository
+* Everybody must commit. I will use your commits to gauge your contribution
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Individually
+* Create a card component for your microsite
+* Demonstrate your component with some sample HTML and CSS
+* Use your team styles and elements
+* Use your feature list and existing content
+* Commit to the team repository in a new folder with your name
+* You must use your own GitHub account to commit
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Team Submission
+* Create a new git repository called "component-design"
+* Include a CSS file for your team design and a HTML document demonstrating the design
+* Your HTML file should be index.html in the root of your repository
+* Publish your site on GitHub Pages
+* Share a link to your repository and github pages URL in the discussion board
+* I will look at commits to see who does the work
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Individual Submission
+* Create a directory with your name in the team repository
+* Include your CSS and HTML in the team repository
+* Your HTML file should be called index.html
