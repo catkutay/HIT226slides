@@ -4,14 +4,6 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-## Javascript
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Programming experience?
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## MVP
 
 
@@ -101,6 +93,14 @@ One project was completed in 8 weeks and is still used. The other was completed 
 ### Another look
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jHyU54GhfGs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## Javascript
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Programming experience?
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
