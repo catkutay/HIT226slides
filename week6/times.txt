@@ -1,3 +1,16 @@
-GHPages: 3 minutes
-JS Intro + script 15 minutes
+
+MVP: 26
+	Slides: 5min
+	Your pages: 10min
+	Video: 11min
+
+JS: 30min
+	Slides: 5min
+	Link script: 10min
+	Questions: 5mina
+	Use console: 10min
+JS Stuff: 30 min
+	Slites: 5 min
+	Riddle me this: 10min
+	Write a loop: 15min
 

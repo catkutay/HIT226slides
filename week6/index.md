@@ -50,9 +50,7 @@ Leave off anything not critical
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Your turn
-* Read the section [Creating an MVP](https://online.cdu.edu.au/bbcswebdav/pid-2721761-dt-content-rid-10170704_2/xid-10170704_2)
-* What questions should you ask?
-* Can you answer these for your websites?
+* Can you answer these questions for your websites?
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
@@ -132,7 +130,7 @@ One project was completed in 8 weeks and is still used. The other was completed 
 ### It's good to be popular
 * Javascript is currently by far the most popular programming language
 
-[Stack Overflow Developer Survey 2017](https://insights.stackoverflow.com/survey/2017#most-popular-technologies)
+[Stack Overflow Developer Survey 2019](https://insights.stackoverflow.com/survey/2019#technology-_-programming-scripting-and-markup-languages)
 
 
 
@@ -257,6 +255,20 @@ var myVar = 5 + 2 * (5 - 2) - 1; // ?
 ```
 
 * 10 <!-- .element class="fragment" data-fragment="1" -->
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### %: Modulo
+You can find the remainder of a division using modulo
+
+```js
+4 % 2; // 0
+5 % 2; // 1
+6 % 2; // 0
+7 % 4; // 3
+```
+
+* This is an easy way to check for an even value <!-- .element class="fragment" data-fragment="1" -->
 
 
 
