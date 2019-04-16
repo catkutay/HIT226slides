@@ -38,6 +38,128 @@ rot13('abcdefghijklmnopqrstuvwxyz')
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## Accessing the DOM
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Querying Selectors
+
+There are a bunch of ways to get elements from the DOM.
+
+Two really stand out
+* getElementById()
+* getElementsByClassName()
+* getElementsByTagName()
+* querySelector() <!-- .element class="fragment fragment-em" data-fragment="1" -->
+* querySelectorAll() <!-- .element class="fragment fragment-em" data-fragment="1" -->
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Query selectors
+Use CSS selectors to get elements from the DOM
+
+* querySelector() - Get the first matching element
+* querySelectorAll() - Get a collection of elements
+
+You can call them from document (the root of the DOM tree) or an element
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+```js
+var btn = document
+	.querySelector('#submitBtn');
+console.log('submit button', btn);
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+```js
+var inputs = document
+	.querySelectorAll('.register-form input');
+console.log('registration inputs', inputs);
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+<video>
+	<source data-src="videos/devtools-query-dom.webm" type="video/webm" />
+</video>
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Have a play
+* Open index.html from hairsalon and type the following into the bottom of the console
+	* document.querySelector('thumb')
+	* document.querySelectorAll('thumb')
+	* document.querySelectorAll('nav li')
+	* document.querySelectorAll('nav > li')
+	* document.querySelector('#logo')
+	* document.querySelectorAll('#logo')
+
+
+<!-- .slide: class="small-margin" data-background-image="../images/bg-mouse.jpg" -->
+### Can you tell what this does?
+```html
+<form class="register-form">
+	<label for="name">Name</label>
+	<input id="name" name="name" />
+	<label for="idCode">ID Code</label>
+	<input id="idCode" name="id" />
+</form>
+```
+
+```js
+var inputs = document.querySelectorAll('.register-form input');
+var registrationData = {};
+for(var i = 0; i < inputs.length; i++) {
+	var inputName = inputs[i].getAttribute('name');
+	registrationData[inputName] = inputs[i].value;
+}
+```
+
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## Classes and javascript
+* Classlist lets you add/remove/check classes on elements
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Add a class
+```js
+document.querySelector('#registerForm')
+	.classList.add('focus');
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Remove a class
+```js
+document.querySelector('#registerForm')
+	.classList.remove('focus');
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Check for a class
+```js
+var registerForm = document.querySelector('#registerForm');
+if(registerForm.classList.contains('active')) {
+	console.log('Register form is active');
+}
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Toggle a class on or off
+```js
+document.querySelector('#registerForm')
+	.classList.toggle('focus');
+```
+
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Debugging
 
 
