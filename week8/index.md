@@ -11,8 +11,6 @@
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Review: ROT13
-Nice job Ryan!!
-
 ```js
 function rot13(string) {
   var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
@@ -34,6 +32,90 @@ function rot13(string) {
 
 rot13('abcdefghijklmnopqrstuvwxyz')
 ```
+
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## Debugging
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Before we start
+* Open the hairsalon page and attach the CSS file if it is not already
+* Download and attach main.js
+* What do you think this file is supposed to do?
+* The file is broken, follow along with the debugger and see if you can find why
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### What is debugging
+* Locating and fixing errors in code
+* Performed at runtime
+	* e.g. in the browser
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### How do we debug
+* Chrome developer tools provides us with an _inline debugger_
+* We can step through our code, line by line as it actually executes
+* There are two main ways to do this
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Debugging from the sources tab
+1. If you open up dev tools and go to sources you will find all your js files
+2. Open the file you want to debug and find the function you want to troubleshoot
+3. Find a line just before where you have a problem and click the line number
+4. A blue arrow appears to indicate you have set a *break point*
+5. When the code gets to your break point it will pause
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Open the debugger
+<video>
+	<source data-src="videos/debug-open.webm" type="video/webm" />
+</video>
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Breakpoint
+* Clicking on a line number creates a breakpoint
+* When the code at the breakpoint is about to execute the browser will pause and open the deugger
+* Lines with breakpoints are indicated with a blue arrow
+
+![blue breakpoint marker](images/debug-breakpoint.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Debug controls
+* Play icon resumes normal code execution
+* Step over continues to the next line in the current function
+* Step into pauses on the first line of the function about to be executed
+* Stop out pauses on the next line of the calling (parent) function
+* Can you find out what the last two do?
+
+![Debug control icons](images/debug-controls.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Checking values
+* You can hover your cursor over a variable to see the value it holds
+* The scope pane shows all variables in the current scope
+* You can add a variable to watch in the watch pane
+
+![Debug scope name](images/debug-scope.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+<video>
+	<source data-src="videos/debug-breakpoint.webm" type="video/webm" />
+</video>
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Review
+* Why is main.js broken?
+* Can you fix it?
 
 
 
@@ -158,94 +240,31 @@ document.querySelector('#registerForm')
 ```
 
 
-
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-## Debugging
+### Your turn
+* Use classList to hide/show extra text
 
+```js
+/**
+* Event handler when the read more button is clicked
+* @param {Event} evt The click event
+**/
+function readMoreClicked(evt) {
+	evt.preventDefault();
+	// Add your code here
+}
 
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Before we start
-* Open the hairsalon page and attach the CSS file if it is not already
-* Download and attach main.js
-* What do you think this file is supposed to do?
-* The file is broken, follow along with the debugger and see if you can find why
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### What is debugging
-* Locating and fixing errors in code
-* Performed at runtime
-	* e.g. in the browser
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### How do we debug
-* Chrome developer tools provides us with an _inline debugger_
-* We can step through our code, line by line as it actually executes
-* There are two main ways to do this
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Debugging from the sources tab
-1. If you open up dev tools and go to sources you will find all your js files
-2. Open the file you want to debug and find the function you want to troubleshoot
-3. Find a line just before where you have a problem and click the line number
-4. A blue arrow appears to indicate you have set a *break point*
-5. When the code gets to your break point it will pause
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Open the debugger
-<video>
-	<source data-src="videos/debug-open.webm" type="video/webm" />
-</video>
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Breakpoint
-* Clicking on a line number creates a breakpoint
-* When the code at the breakpoint is about to execute the browser will pause and open the deugger
-* Lines with breakpoints are indicated with a blue arrow
-
-![blue breakpoint marker](images/debug-breakpoint.png)
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Debug controls
-* Play icon resumes normal code execution
-* Step over continues to the next line in the current function
-* Step into pauses on the first line of the function about to be executed
-* Stop out pauses on the next line of the calling (parent) function
-* Can you find out what the last two do?
-
-![Debug control icons](images/debug-controls.png)
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Checking values
-* You can hover your cursor over a variable to see the value it holds
-* The scope pane shows all variables in the current scope
-* You can add a variable to watch in the watch pane
-
-![Debug scope name](images/debug-scope.png)
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-<video>
-	<source data-src="videos/debug-breakpoint.webm" type="video/webm" />
-</video>
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Review
-* Why is main.js broken?
-* Can you fix it?
+document.querySelector(;#readMoreBtn', readMoreClicked);
+```
 
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Event Listeners
-* An event listener is code that runs when an certain event happens
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+* An event listener is code that runs when a certain event happens
 * Common events include
 	* An element is clicked
 	* An input is changed
@@ -315,7 +334,7 @@ button.removeEventListener('click', clickHandler);
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Code Challenge
-Working with your table, can you make a drag and drop?
+Working with your team, can you make a drag and drop?
 
 ```js
 /**
