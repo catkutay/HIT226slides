@@ -3,10 +3,27 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### JQuery and other frameworks
-* Frameworks are great but you need to learn to write javascript first!
-* Please do not use javascript frameworks like jQuery for your milestone or prac submissions
-* You may however use them for your team website
+### Prac 4 Feedback
+<div class="column-wrapper">
+	<div class="column">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Fxemoji_u1F601.svg" alt="smiley face" class="column-icon" />
+		<ul class="happy-list">
+			<li>Some great looking cards</li>
+			<li>Some very informative git commit messages made it easy to see what people are doing</li>
+			<li>Many people used the lighthouse tool to check accessibility</li>
+			<li>Some very clever cards using things like clip-path and javascript</li>
+		</ul>
+	</div>
+	<div class="column">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Fxemoji_u1F622.svg" alt="sad face" class="column-icon" />
+		<ul class="sad-list">
+			<li>Looks like a lot of people are still using the web interface to delete and re-upload files.</li>
+			<li>Many are not testing with lighthouse</li>
+			<li>Only showing content on hover doesn&quot;t work with a keyboard or touchscreen</li>
+			<li>Most teams didn&quot;t test their pages on mobile.</li>
+		</ul>
+	</div>
+</div>
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
