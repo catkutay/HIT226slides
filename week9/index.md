@@ -2,6 +2,19 @@
 # Lets Code
 
 
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## Prac 4 grades
+![Prac 4 boxplot](images/prac4-2019.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+* HD: 17
+* D: 12
+* C: 22
+* P: 25
+* F: 10
+
+
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Classes and javascript
