@@ -45,6 +45,7 @@ document.querySelector('#registerForm')
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Your turn
 * Use classList to hide/show extra text
+* Activity on [codepen](https://codepen.io/elvey/pen/VOeMBv)
 
 ```js
 /**
