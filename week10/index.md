@@ -4,37 +4,6 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-## Assessment requirements
-* Make sure to read the assessment criteria
-* If there is a group assessment
-	* Everyone *must* submit a link to the group work
-* So far most of the submissions I've checked for milestone 2 do not have the team component
-	* Please upload your group links by the end of the weekend and I will mark it
-* If you don't read the requirements in the workplace you don't get work
-
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-## GitHub vs GitHub Pages
-* GitHub is a Git repository
-* GitHub Pages is static web hosting
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-* Git is a source repository (see week 1)
-* A place to store your source code
-* Tracks code changes
-* You *MUST* use this for your milestone assessments
-* You *MUST* submit a link to your repository
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-* GitHub Pages is web hosting
-* Similar to spinetail
-
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Exam preparation
 * In your teams grab a whiteboard
 * Can you drag page with the HTML, CSS and JS from the exam last year?
@@ -42,86 +11,88 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-## Editing the DOM
-* Open up the hair salon page and follow along with the console prompt
+## Git: Merge Conflicts
+![merge conflict screenshot](images/gitgui-merge-conflict.png)
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Modifying attributions
-You can read and set the properties of an element using dot notation
+### Fast-forward error
+* Read the message text
+* Your code is not up to date with the remote repository
+* Someone else has pushed since you last fetched/pulled
 
-```js
-var nameInput = document.querySelector('input[name="fname"]');
-if(nameInput.value.toUpperCase === 'MATT') {
-	nameInput.value = 'Elvey';
-}
-```
+![fast-forward error](images/gitgui-fastforward.png)
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-You can access most attributes using dot notation
-
-```js
-var myInput = document.createElement('input');
-myInput.id = 'nameInput';
-myInput.className = 'fancy-input';
-myInput.type = 'text';
-myInput.required = true;
-myInput.maxlength = '50';
-document.body.appendChild(myInput);
-```
+### What do I do??
+* Get the latest code (fetch and merge)
+![Git GUI remote menu](../week1/images/gitgui-fetch.png) <!-- .element: class="fragment" data-fragment-index="1" -->
+![Git GUI merge menu](../week1/images/gitgui-merge.png) <!-- .element: class="fragment" data-fragment-index="2" -->
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Modify the contents
-
-innerHTML lets us set the HTML inside an element
-
-```js
-document.querySelector('section:first-child').innerHTML = 'hello';
-
-document.querySelector('.hero').innerHTML
-	= '<h3>Extra Bits</h3><p>There are lots of cool extra bits you can do with javascript</p>';
-```
+### Merge failed??
+![Git GUI merge conflict](images/gitgui-merge-conflict.png)
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Insert or move elements
-
-Node.appendChild() will add an element to its children. If the element exists elsewhere it will be moved
-
-```js
-var newsletter = document.querySelector('.newsletter');
-document.querySelector('.hero').appendChild(newsletter);
-```
+* If two people have edited the same part of the same file you get a merge conflict
+* When you try to merge the file will be modified to include both versions
+* You need to manually update this file to select which version you want to keep
+* The "diff" will show and lines that have been added and any that have been removed
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Remove an element
-Node.removeChild will remove an element from a node
-
-```js
-var newsletter = document.querySelector('.newsletter');
-newsletter.parentElement.removeChild(newsletter);
-```
-
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Create a new element
-You can always create a new element using document.createElement
-
-```js
-var myNewDiv = document.createElement('div');
-myNewDiv.innerHTML = '<h3>Cool stuff</h3><p>There is lots of cool stuff here but the best thing is that it is new!</p>';
-document.querySelector('.hero').appendChild(myNewDiv);
-```
+### Resolve the conflict
+* Open the file in Atom
+* Find the following line
+	* <<<<<<< HEAD
+	* Your code will appear after this line
+* Find the following line
+	* =======
+	* The server code will appear after this line
+* Find the ending line
+	* &gt;&gt;&gt;&gt;&gt;&gt;&gt;
+	* This indicates the end of the conflict
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Your turn
-* Download tour.html
-* Attach the javascript and css to the hair salon page
-* Edit the javascript according to the comments
+* Edit the text to include the changes you want
+* Remember to delete all the marker lines
+* Atom has helper buttons in you want to pick only one change
+![Merge conflicts in atom](images/atom-merge-conflict.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Commit your changes
+* Clicking "stage all to commit" does not work for merge conflcits
+* Select the file then Commit -> Stage to commit
+![Git GUI stage to commit](images/gitgui-stage-to-commit.png);
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+* now commit the merged file
+![Git GUI commit merge](images/gitgui-commit.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+* You can now push to the server
+![Git GUI push successful](images/gitgui-push-successful.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Some tips to minimise conflicts
+* Pull before you start work
+* Commit and push regularly
+* Keep your commits small
+	* Work on one thing at a time
+	* Your commit message should be a short sentance describing what you've done
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### NEVER force push
+![Commit Stip: The force](https://www.commitstrip.com/wp-content/uploads/2019/03/Strip-Le-cot%C3%A9-obscur-de-la-force-650-finalenglish.jpg)
 
 
 
