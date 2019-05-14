@@ -2,6 +2,19 @@
 # Lets Code
 
 
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## Prac 4 grades
+![Prac 4 boxplot](images/prac4-2019.png)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+* HD: 17
+* D: 12
+* C: 22
+* P: 25
+* F: 10
+
+
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Classes and javascript
@@ -45,6 +58,7 @@ document.querySelector('#registerForm')
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Your turn
 * Use classList to hide/show extra text
+* Activity on [codepen](https://codepen.io/elvey/pen/VOeMBv)
 
 ```js
 /**
@@ -136,7 +150,7 @@ button.removeEventListener('click', clickHandler);
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Code Challenge
-Working with your team, can you make a drag and drop?
+Working with your team, can you make a [drag and drop?](https://codepen.io/elvey/pen/ardLxo)
 
 ```js
 /**
@@ -189,7 +203,7 @@ Have a look at the [event types](https://developer.mozilla.org/en-US/docs/Web/Ev
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Editing the DOM
-* Open up the hair salon page and follow along with the console prompt
+* Open up the [hair salon page](https://online.cdu.edu.au/courses/1/HIT226_Sem1_2019/db/_3159284_1/embedded/hairstylesalon-week8.zip) and follow along with the console prompt
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
@@ -264,8 +278,8 @@ document.querySelector('.hero').appendChild(myNewDiv);
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Your turn
-* Download tour.html
-* Attach the javascript and css to the hair salon page
+* Download [tour.html](https://online.cdu.edu.au/bbcswebdav/pid-2721761-dt-content-rid-9151097_2/xid-9151097_2)
+* Attach the javascript and css to the [hair salon page](https://online.cdu.edu.au/courses/1/HIT226_Sem1_2019/db/_3159284_1/embedded/hairstylesalon-week8.zip)
 * Edit the javascript according to the comments
 
 
