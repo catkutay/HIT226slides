@@ -4,9 +4,10 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-## Exam preparation
-* In your teams grab a whiteboard
-* Can you drag page with the HTML, CSS and JS from the exam last year?
+## Coding practice
+* In your teams work together to write a function that indicates which sections a user has read
+* The Front-end Developer must *not* drive (someone else controls the keyboard)
+* Use the [exercise on codepen](https://codepen.io/elvey/pen/zQwYgW)
 
 
 

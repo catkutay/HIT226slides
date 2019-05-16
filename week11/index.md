@@ -3,6 +3,12 @@
 
 
 
+## Exam preparation
+* In your teams grab a whiteboard
+* Can you drag page with the HTML, CSS and JS from the exam last year?
+
+
+
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Device testing
 You don't always have multiple devices on which to test your site but there are some ways we can do the next best thing.
