@@ -33,6 +33,7 @@
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Merge failed??
+* "fix conflicts and then commit the result"
 ![Git GUI merge conflict](images/gitgui-merge-conflict.png)
 
 
@@ -41,6 +42,11 @@
 * When you try to merge the file will be modified to include both versions
 * You need to manually update this file to select which version you want to keep
 * The "diff" will show and lines that have been added and any that have been removed
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## Git: Merge Conflicts
+![merge conflict screenshot](images/gitgui-merge-conflict-diff.png)
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
