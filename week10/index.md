@@ -98,6 +98,13 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Exercise
+* In your teams each person modify the heading in README.md
+* Everyone try to push your changes at once
+* Fix the merge conflicts
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### NEVER force push
 ![Commit Stip: The force](https://www.commitstrip.com/wp-content/uploads/2019/03/Strip-Le-cot%C3%A9-obscur-de-la-force-650-finalenglish.jpg)
 
