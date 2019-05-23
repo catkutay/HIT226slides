@@ -4,6 +4,149 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+## Javascript Strings
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### What is a string
+* A string is a representation of text
+* Written using single quotes or double quotes
+
+```js
+'This is a string'
+"This is also a string"
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Concatanting strings
+You concatanate strings with the plus character
+
+```js
+var myString = 'this is a string.';
+myString = myString + ' It is now a longer string.';
+myString += ' You can also use the plus equals operator';
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Escaping special characters
+If I use quotes to delimit a string how can I put a literal quote in my string?
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+Escape [special characters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Escape_notation) with a backslash
+
+* \' - Single quote
+* \" - Double quote
+* \\ - Backslash
+* \n - new line
+
+```js
+var myString = 'That\'s my \"string\"';
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### HTML Special Characters
+* Some characters mean special things in HTML (and URLs)
+	* &amp;lt; : <
+	* &amp;gt; : >
+	* &amp;amp; : &
+	* &amp;quot; : "
+	* &amp;#39; : '
+* Full lists are available online [http://www.degraeve.com/reference/specialcharacters.php](http://www.degraeve.com/reference/specialcharacters.php)
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### String properties and functions
+* There are [lots of functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#String_instances) to help probe and modify your strings
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### How long is my string
+String.length
+
+```js
+if(inputString.length < 4) {
+	throw new Error("Input string length is less than minimum length (4)");
+}
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Get a character out of a string
+You can use array notation for string characters
+
+What does this output
+```js
+var myString = "this is a string";
+console.log(myString[3]);
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Find a string inside a string
+String.indexOf
+
+What does this output?
+```js
+var catString = "I am going to talk about cats. Not catalogues but cats";
+console.log(catString.indexOf('cat');
+console.log(catStrring.indexOf('dog');
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Extract a string
+String.slice(startIndex, endIndex)
+* startIndex - the index to extracting from
+* endIndex (optional) - The index to extract up to (not inluded in the extracted string)
+
+What does this output?
+```js
+var catString = "I am going to talk about cats. Not catalogues but cats";
+catString.slice(14, 18);
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Convert case
+String.toUpperCase() and String.toLowerCase()
+
+Useful for case insensitive checks
+```js
+if(input.value.toUpperCase() === name.toUpperCase()) {
+	// input value matches name but may not be the same case
+}
+```
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Your turn
+* Write a function that takes a string and converts the first character to upper case
+* Can you make it convert the first letter of every sentance?
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Extra: Regular Expression Black Magic
+* Regular expressions are too much to cover now but are extremly powerful.
+* Like wildcard strings for programmers
+* Take a while to learn but very useful
+
+```js
+var endNumber = testString.match(/(\d*)$/); // Get a number from the end of the string
+
+if(input.value.match(/^[\d -]*$/)) {
+	// Input value only contains numbers, spaces and hyphens
+}
+```
+
+
+
+
+
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Project structure
 
 
