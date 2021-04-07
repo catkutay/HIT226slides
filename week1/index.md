@@ -4,60 +4,53 @@
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/atom-intro.ogg" -->
-## Atom Editor
-![Atom editor](images/Atom_editor_logo.svg)
+## Visual Code Studio Editor
 
 Note:
-For this course we're going to use Atom. There are a lot of different text editors available and lots are people are pretty dedicated to their favourite. If you already have a favourite feel free to use that. But for those getting starting we recommend using atom
+For this course we're going to use Visual Code Studio. There are a lot of different text editors available and lots are people are pretty dedicated to their favourite. However Visual Code Studio (VCS) provides a lot of support, such as spelling consistency (undefined variables) and structure.
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/atom-why.ogg" -->
-### Why use atom
+### Why use VCS
 * Cross platform
 * Configurable (HTML & CSS)
 * Easy to setup and learn
-* Package manager
+* Package manager for plugins
 * Cool features
 	* Syntax highlighting
 	* Smart autocomplete
 	* Search and browse project files
 	* Git integration
 
-Note:
-Atom is a cross platform, customisable text editor for coding. It is easy to setup and get started with but lets you complately configure the look and feel using HTML and CSS and to extend the functionality with plugins. It also comes with a lot of useful features out of the box like autocomplete, syntax highlighting and project wide search.
-It is also really customisable using web languages. You can change the whole application theming using just CSS!
-
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
 <video>
-	<source data-src="videos/atom-intro.webm " type="video/webm" />
+	<source data-src="videos/vcs-intro.webm " type="video/webm" />
 </video>
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Atom: Activity
-* Open atom and add the document you made before class as a project
-* Explore atom features
-	* Open settings menu (ctl+,)
-	* Explore features in the command palette (ctl+shift+p)
-	* Explore keyboard shortcuts from a list like [https://github.com/nwinkler/atom-keyboard-shortcuts](https://github.com/nwinkler/atom-keyboard-shortcuts)
-
+### VCS: Activity
+* Install VCS
+* Open VCS and add the document you made before class as a project
+* Explore VCS features
+	* Open settings menu 
+	* Explore features in the command palette 
+	* Explore keyboard shortcuts 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
 Share what you found
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Atom plugins
-* Open the settings menu (ctl+,) and select install
-* Type in devdocs and install the package
-* Now go to your html document and select a tag name
-* Press ctl+alt+D to open the documentation for that tag from [https://devdocs.io](devdocs.io)
+### VCS plugins
+* Open the extensions on LH menu  and select install
+* Type in the support you want
 
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-## Git
+## Git on Bitbucket
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-what.ogg" -->
@@ -67,7 +60,7 @@ Share what you found
 * Distributed
 
 Note:
-Git is a distributed source and version control platform. It tracks changes to our files and stores those changes on a server.
+Bitbucket is a distributed source and version control platform that uses git software. It tracks changes to our files and stores those changes on a server.
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-why.ogg" -->
@@ -78,11 +71,11 @@ Git is a distributed source and version control platform. It tracks changes to o
 * Allows multiple people to work on the same code without disrupting eachother
 
 Note:
-Tracking our code changes on git makes it easy to share and prevents us from trying to manage multiple versions when we're trying something new. If you broke something, you can just go revert your code back to an earlier state. Because it stores changes, instead of the whole file, it also makes it easier for multiple people to work on the same code without breaking eachother's work.
+Tracking our code changes on Bitbucket makes it easy to share and prevents us from trying to manage multiple versions when we're trying something new. If you broke something, you can just go revert your code back to an earlier state. Because it stores changes, instead of the whole file, it also makes it easier for multiple people to work on the same code without breaking eachother's work.
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-functions.ogg" -->
-### Git functions
+### Git functions on Bitbucket
 * Clone - Copy a repository to our local machine
 * Add - Stage a file to commit
 * Commit - Store a code change in git
@@ -96,27 +89,28 @@ This are some common git functions. Don't worry, you don't need to learn them al
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-github.ogg" -->
-### Github
-* A public git server
+### Bitbucket
+* A commercial git server as part of Atlassian suite of development tools
 * A place to publish and share your code
 * A place to find and download code other people have written
 * A platform to submit code changes to open source projects
 
 Note:
-Github is a public git server. We're going to use it in this course to track our projects. It is a public place to publish and share your code. IT is also a great place to find and download code that other people have written. It's also great to share on your CV as it shows what you can do.
+Bitbucket is a commercially popular server. We're going to use it in this course to track our projects. I tis linke dot issue tracking Tool Jira and a document Wiki Confluence
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
 ### Activity: Setup a git repository
-* Register for github
+* Register for Bitbucket
+* setup you ssh key for access (esp when using visual support tools like SourecTree or GIT GUI)[https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/](Support)
 * Create a new repository for your prep for unit
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-wingit.ogg" -->
 ### WinGit client
 * Lots of clients available
-* Download from [https://git-scm.com/](https://git-scm.com/)
-* GUI with Git GUI and command prompt with Git Bash
+* Download from [https://git-scm.com/download](https://git-scm.com/download)
+* GUI with SourceTree [https://www.sourcetreeapp.com/](https://www.sourcetreeapp.com/) and command prompt with Git Bash
 
 Note:
 There are a lot of git clients about. For those of you on windows, I'd suggest using Git GUI for windows or the git client built in to Atom
@@ -149,17 +143,17 @@ To get the latests changes from the server open Git GUI, select "Remote" from th
 ![Git GUI buttons with push selected](images/gitgui-push.png) <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Note:
-When you finish you'll need to commit to save your work and push to send them to the server. From Git GUI select "rescan" to search for changed files. You should see a list of modified files appear. Now open the Commit menu and select "Stage to commit". Now your files are staged you can commit them to the repository. Enter a description of what has changed in the "Commit Message" field and click the "commit button". Your changes are now saved". Click the push button to send your changes to the server.
+When you finish you'll need to commit to save your work and push to send them to the server. From GUI select "rescan" to search for changed files. You should see a list of modified files appear. Now open the Commit menu and select "Stage to commit". Now your files are staged you can commit them to the repository. Enter a description of what has changed in the "Commit Message" field and click the "commit button". Your changes are now saved". Click the push button to send your changes to the server.
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
-### Activity: Git local repository
+### Activity: Bitbucket local repository
 * Clone your repository to your local machine
 	* You can get the address from the green clone button on github
 * Copy your prep for unit site to the directory
 * Add the new files to git
 * Commit the staged files with the comment "add initial files"
-* Push your code and check it appears on the github website
+* Push your code and check it appears on the Bitbucket website
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
@@ -171,7 +165,7 @@ When you finish you'll need to commit to save your work and push to send them to
 	* Keep them small so it is easy to see what has changed
 	* It is better to commit too frequently rather than not enough
 	* Try not to break things
-
+* If you get access errors, make sure you have your ssh key set up
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
