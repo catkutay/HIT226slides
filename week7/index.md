@@ -96,7 +96,7 @@ var catString = "I am going to talk about cats. Not catalogues but cats";
 console.log(catString.indexOf('cat');
 console.log(catString.indexOf('dog');
 ```
-* 25 
+* 25 <!-- .element class="fragment" data-fragment="1" -->
 * -1 <!-- .element class="fragment" data-fragment="1" -->
 
 
@@ -190,6 +190,8 @@ if(input.value.match(/^[\d -]*$/)) {
 +-- contact.html
 +-- index.html
 +-- locations.html
++-- js
+|  +-- main.js
 ```
 
 
@@ -201,6 +203,8 @@ if(input.value.match(/^[\d -]*$/)) {
 |   +-- index.html
 |   +-- katherine.html
 |   +-- palmerston.html
++-- js
+|   +-- main.js
 +-- contact.html
 +-- index.html
 ```
