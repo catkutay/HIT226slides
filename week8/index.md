@@ -4,7 +4,7 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Prac 4 Feedback
+<!-- ### Prac 4 Feedback
 <div class="column-wrapper">
 	<div class="column">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Fxemoji_u1F601.svg" alt="smiley face" class="column-icon" />
@@ -26,20 +26,24 @@
 	</div>
 </div>
 
-
+-->
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Marking guidelines
 * Read the guidelines
 	* If there are 15 marks for making it responsive - make sure you at least try
+* Coding
+	* Commit with a message
+	* Do not code on the web - edit on computer and commit
 * Test your work before submitting
 	* Does it validate?
+	* Use Lighthouse and W3C validator
 	* How does it work when you resize the screen
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ## Marking guidelines
 * Make sure you submit correctly
-	* Github pages
+	* bitbucket.io served pages
 	* Use git commits to show your work
 
 
@@ -143,11 +147,13 @@
 
 ```
 @media(max-width: 800px) {
-	// Try and fit everything into a smaller space
+	// Try and fit everything into 
+		a smaller space
 }
 
 @media(min-width: 800px) {
-	// Stretch out and use all the extra room
+	// Stretch out and use all 
+		the extra room
 }
 ```
 
@@ -163,7 +169,8 @@
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Review: ROT13
-* Did anyone do the exercise from week 7?
+* Did anyone do the exercise from week 7 slides to rotate
+	the order of the letters of the alphabet?
 
 ```js
 function rot13(string) {
