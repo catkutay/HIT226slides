@@ -39,7 +39,7 @@ Escape [special characters](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 
 * \' - Single quote
 * \" - Double quote
-* \\ - Backslash
+* \\ - actual Backslash in text
 * \n - new line
 
 ```js
@@ -414,7 +414,9 @@ console.log(vegetables[4]); // undefined
 vegetables[4] = 'pumpkin';
 console.log(vegetables[4]); // pumpkin
 ```
-
+* cucmber
+* undefined
+* pumpkin <!-- .element class="fragment" data-fragment="1" -->
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Finding the array length
@@ -422,7 +424,7 @@ console.log(vegetables[4]); // pumpkin
 ```js
 console.log(vegetables.length); // 5
 ```
-
+ * 5 <!-- .element class="fragment" data-fragment="1" -->
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Putting it together
@@ -439,7 +441,7 @@ for(var i = 0; i < vegetables.length; i++) {
 * [push(value)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) pushes the value onto the end of an array
 * [pop()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) Removes and returns the last value of an array
 * [splice(pos, n, elem...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) Removes n number of items from the index pos. If elements are provided they are inserted at pos
-* [join(seperator)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) Returns all the elements of the array as a string. Inserts seperator if provided
+* [join(separator)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) Returns all the elements of the array as a string. Inserts seperator if provided
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
