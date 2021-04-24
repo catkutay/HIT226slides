@@ -99,6 +99,8 @@ console.log(catString.indexOf('dog');
 * 25 
 * -1 <!-- .element class="fragment" data-fragment="1" -->
 
+
+
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Extract a string
 String.slice(startIndex, endIndex)
