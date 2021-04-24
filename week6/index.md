@@ -184,11 +184,11 @@ One project was completed in 8 weeks and is still used. The other was completed 
 var myVal = 5;
 myVal = 'I\'m a string';
 ```
-Use meaningful names for your variables 
+Use meaningful names for your variables <!-- .element class="fragment" data-fragment="1" -->
 
 Note:
 let and const are newer variable keywords. They are supported by newer versions of javascript but we will not be covering them in this course
-<!-- .element class="fragment" data-fragment="1" -->
+
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Javascript is case sensitive
