@@ -19,8 +19,8 @@
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Concatanting strings
-You concatanate strings with the plus character
+### Concatenating strings
+You concatenate strings with the plus character
 
 ```js
 var myString = 'this is a string.';
@@ -69,7 +69,8 @@ String.length
 
 ```js
 if(inputString.length < 4) {
-	throw new Error("Input string length is less than minimum length (4)");
+	throw new Error("Input string length is less 
+			than minimum length (4)");
 }
 ```
 
@@ -93,10 +94,10 @@ What does this output?
 ```js
 var catString = "I am going to talk about cats. Not catalogues but cats";
 console.log(catString.indexOf('cat');
-console.log(catStrring.indexOf('dog');
+console.log(catString.indexOf('dog');
 ```
-
-
+*25 <!-- .element class="fragment" data-fragment="1" -->
+*-1
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Extract a string
 String.slice(startIndex, endIndex)
