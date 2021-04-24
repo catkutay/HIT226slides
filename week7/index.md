@@ -96,8 +96,8 @@ var catString = "I am going to talk about cats. Not catalogues but cats";
 console.log(catString.indexOf('cat');
 console.log(catString.indexOf('dog');
 ```
-*25 <!-- .element class="fragment" data-fragment="1" -->
-*-1
+* 25 
+* -1 <!-- .element class="fragment" data-fragment="1" -->
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Extract a string
 String.slice(startIndex, endIndex)
@@ -126,6 +126,7 @@ if(input.value.toUpperCase() === name.toUpperCase()) {
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Your turn
 * Write a function that takes a string and converts the first character to upper case
+
 * Can you make it convert the first letter of every sentance?
 
 
