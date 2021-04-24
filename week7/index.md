@@ -96,6 +96,8 @@ var catString = "I am going to talk about cats. Not catalogues but cats";
 console.log(catString.indexOf('cat');
 console.log(catString.indexOf('dog');
 ```
+
+
 * 25 <!-- .element class="fragment" data-fragment="1" -->
 * -1 <!-- .element class="fragment" data-fragment="1" -->
 
