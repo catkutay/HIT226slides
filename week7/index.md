@@ -98,6 +98,7 @@ console.log(catString.indexOf('dog');
 ```
 * 25 
 * -1 <!-- .element class="fragment" data-fragment="1" -->
+
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Extract a string
 String.slice(startIndex, endIndex)
@@ -351,7 +352,7 @@ function sum(val1, val2) {
 var mySum = sum(5, 4);
 console.log(mySum);
 ```
-
+* 9 <!-- .element class="fragment" data-fragment="1" -->
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Your turn
@@ -411,10 +412,10 @@ var vegetables = [
 * You can also assign data to an index
 
 ```js
-console.log(vegetables[0]); // cucumber
-console.log(vegetables[4]); // undefined
+console.log(vegetables[0]); 
+console.log(vegetables[4]); 
 vegetables[4] = 'pumpkin';
-console.log(vegetables[4]); // pumpkin
+console.log(vegetables[4]); 
 ```
 * cucmber
 * undefined
