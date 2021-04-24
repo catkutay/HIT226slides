@@ -85,6 +85,7 @@ var myString = "this is a string";
 console.log(myString[3]);
 ```
 
+* s <!-- .element class="fragment" data-fragment="1" -->
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Find a string inside a string
@@ -97,10 +98,7 @@ console.log(catString.indexOf('cat');
 console.log(catString.indexOf('dog');
 ```
 
-
-* 25 <!-- .element class="fragment" data-fragment="1" -->
-* -1 <!-- .element class="fragment" data-fragment="1" -->
-
+* 25 * -1 <!-- .element class="fragment" data-fragment="1" -->
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
@@ -115,6 +113,7 @@ var catString = "I am going to talk about cats. Not catalogues but cats";
 catString.slice(14, 18);
 ```
 
+* talk  <!-- .element class="fragment" data-fragment="1" -->
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Convert case
@@ -136,7 +135,7 @@ if(input.value.toUpperCase() === name.toUpperCase()) {
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Extra: Regular Expression Black Magic
+### Extra: Regular Expression 
 * Regular expressions are too much to cover now but are extremly powerful.
 * Like wildcard strings for programmers
 * Take a while to learn but very useful
@@ -256,7 +255,7 @@ if(input.value.match(/^[\d -]*$/)) {
 |   +-- jquery
 |       +-- jquery.js 
 +-- locations
-+-- scripts
++-- scripts/js
 |   +-- form-validation.js
 |   +-- main.js
 +-- styles
@@ -362,6 +361,7 @@ console.log(mySum);
 ```
 * 9 <!-- .element class="fragment" data-fragment="1" -->
 
+
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Your turn
 * Write a function to calculate the factorial of a number
@@ -425,9 +425,9 @@ console.log(vegetables[4]);
 vegetables[4] = 'pumpkin';
 console.log(vegetables[4]); 
 ```
-* cucmber
-* undefined
-* pumpkin <!-- .element class="fragment" data-fragment="1" -->
+
+* cucumber. * undefined. * pumpkin <!-- .element class="fragment" data-fragment="1" -->
+
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Finding the array length
