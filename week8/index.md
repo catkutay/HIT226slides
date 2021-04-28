@@ -171,7 +171,11 @@
 ### Review: ROT13
 * Did anyone do the exercise from week 7 slides to rotate
 	the order of the letters of the alphabet?
-
+	
+<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
+### Review: ROT13
+* Example:
+* 
 ```js
 function rot13(string) {
   var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
