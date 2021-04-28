@@ -175,7 +175,6 @@
 	rot13('abcdefghijklmnopqrstuvwxyz')
 ```
 
-
 	
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
 ### Review: ROT13
@@ -202,7 +201,6 @@ function rot13(string) {
 
 rot13('abcdefghijklmnopqrstuvwxyz')
 ```
-
 
 
 <!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
