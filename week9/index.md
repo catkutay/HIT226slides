@@ -198,8 +198,8 @@ You can read and set the properties of an element using dot notation
 
 ```js
 var nameInput = document.querySelector('input[name="fname"]');
-if(nameInput.value.toUpperCase === 'MATT') {
-	nameInput.value = 'Elvey';
+if(nameInput.value.toUpperCase === 'CAT') {
+	nameInput.value = 'Kutay';
 }
 ```
 
@@ -261,11 +261,5 @@ myNewDiv.innerHTML = '<h3>Cool stuff</h3><p>There is lots of cool stuff here but
 document.querySelector('.hero').appendChild(myNewDiv);
 ```
 
-
-<!-- .slide: data-background-image="../images/bg-mouse.jpg" -->
-### Your turn
-* Download [tour.html](https://online.cdu.edu.au/bbcswebdav/pid-2721761-dt-content-rid-9151097_2/xid-9151097_2)
-* Attach the javascript and css to the [hair salon page](https://online.cdu.edu.au/courses/1/HIT226_Sem1_2019/db/_3159284_1/embedded/hairstylesalon-week8.zip)
-* Edit the javascript according to the comments
 
 
