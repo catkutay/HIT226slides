@@ -103,10 +103,13 @@ Bitbucket is a commercially popular server. We're going to use it in this course
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
 ### Activity: Setup a git repository
-* Note if you prefer to use github, that's okay, but more instructions will be for bitbucket. The main difference is Bitbucket is used for commercial applications more and has more security
-* So now: Register for Bitbucket
-* setup you ssh key for access (esp when using visual support tools like SourecTree or GIT GUI)[https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/](Support)
+
+* So now: Register for Bitbucket with your CDU email. Make sure you monitor this email.
+* Then setup you ssh key for access (esp when using visual support tools like SourecTree or GIT GUI)[https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/](Support)
 * Create a new repository for your preparation for the unit
+
+Note: 
+If you prefer to use github, that's okay, but more instructions will be for bitbucket. The main difference is Bitbucket is used for commercial applications more and has more security
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-wingit.ogg" -->
@@ -121,37 +124,84 @@ There are a lot of git clients about. For those of you on windows, I'd suggest u
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-clone.ogg" -->
 #### Create a Repository
-To set up a repository on bitbucket, you need to make an account with your CDU email which hopefully you normally monitor. Then create a new repository.
+* Select the '+' button
+![New repository](images/create-a-repository.png) 
+* In bitbucket the repository is default private, so unselect that. 
+* Choose a workspace name that will be unique to you . 
+* Include a README and a .gitignore file
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-clone.ogg" -->
+#### Name a Repository
+
+* You only need to make one repository per project, so spend some time on setting it up
+![Name a repository](images/name-your-repository.png)
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-clone.ogg" -->
+#### .gitignore
+* .gitgnore is a file that tells the repository not to store various files. For instance images are not text based so cannot be version controlled. 
+* However until you share images amongst your teams, better to include in your repository (so remove image references from your .gitignore)
+* If your files are not pushing (see below) then they are probably in the .gitignore
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-clone.ogg" -->
 #### Clone a repository
-![Git GUI open menu with "Git GUI here" highlighted](images/gitgui-open.png) <!-- .element: class="screenshot-small fragment current-visible" data-fragment-index="1" -->
-![Git GUI new repoitory and clone options](images/gitgui-menu-new.png) <!-- .element: class="screenshot-small fragment current-visible" data-fragment-index="2" -->
-![Git GUI clone menu](images/gitgui-menu-clone.png) <!-- .element: class="screenshot-small fragment current-visible" data-fragment-index="3" -->
-
-Note:
-To clone an existing repository to your computer, right click where you want to clone it and select "Git GUI here". Select "Clone existing repository" and enter the git address in "Source Location". Enter the path you want to clone to in "Target directory". Note that the final directory in target directory should not exist as git will create it for you.
+![Repsitory to open](images/gitgui-open.png) 
+* Change from SSH to HTTPS connection
+![Change to https](images/change-to-https.png) 
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-merge.ogg" -->
-#### Fetch changes
-![Git GUI remote menu](images/gitgui-fetch.png) <!-- .element: class="fragment" data-fragment-index="1" -->
-![Git GUI merge menu](images/gitgui-merge.png) <!-- .element: class="fragment" data-fragment-index="2" -->
+#### Using Sourcetree
+![Git save](images/sourcetree-save.png)
+* Select the directory to copy the code. Please make a subject folder to put this in, organise your work
+* You can then edit your code in your code editor. When you make changes, commit them through Sourcetree and push to the repository online
 
-Note:
-To get the latests changes from the server open Git GUI, select "Remote" from the menu, "Fetch from" then "origin". This downloads the latests changes from the server. To mix the changes in with your code select the "Merge" menu then "Local merge". Now your code is up to date.
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-merge.ogg" -->
+#### Using Sourcetree
+Sourcetree has very good interface to see past changes, files changes to commit, and notification of items from team members to pull
+![Git view](images/sourcetree-view.png)
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-merge.ogg" -->
+#### Using VS CODE
+* Open VS Code in a new workplace and select the tree icon on left hand menu to do basic commit, and push
+![Git view](images/vscode-view.png)
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-merge.ogg" -->
+#### Sharing Repository
+
+* Without access to write, your team will have to make a pull request, this is not productive.
+* Use Settings on left hand menu to add users or change  to public under Repository Settings
+
+![security](images/security.png) ![access](images/access.png) 
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-commit.ogg" -->
 ### Commit and Push
-![Git GUI buttons with rescan highlighted](images/gitgui-rescan.png) <!-- .element: class="fragment" data-fragment-index="1" -->
-![Git GUI commit menu with stage selected](images/gitgui-stage.png) <!-- .element: class="fragment" data-fragment-index="2" -->
-![Git GUI buttons with commit selected](images/gitgui-commit.png) <!-- .element: class="fragment" data-fragment-index="3" -->
-![Git GUI buttons with push selected](images/gitgui-push.png) <!-- .element: class="fragment" data-fragment-index="4" -->
 
-Note:
-When you finish you'll need to commit to save your work and push to send them to the server. From GUI select "rescan" to search for changed files. You should see a list of modified files appear. Now open the Commit menu and select "Stage to commit". Now your files are staged you can commit them to the repository. Enter a description of what has changed in the "Commit Message" field and click the "commit button". Your changes are now saved". Click the push button to send your changes to the server.
+* If another team member has been editing the same file as you, you will not be able to push you changes. You will get a message
+![error committing](images/error-commit.png) 
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-commit.ogg" -->
+### Commit and Push
+
+* To continue your work, 
+* a.	pull their changes 
+* b.	merge with the new head you just downloaded
+![merge](images/merge.png) 
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-merge.ogg" -->
+#### Fetch changes
+
+* To get the latests changes from the server select "Pull". This downloads the latests changes from the server. 
+* Select manually how you will edit the differences between the files using your code editor
+* Commit and Push the new changes
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
@@ -174,6 +224,29 @@ When you finish you'll need to commit to save your work and push to send them to
 	* It is better to commit too frequently rather than not enough
 	* Try not to break things
 * If you get access errors, make sure you have your ssh key set up
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+## Set up your site
+
+* How to create a repository with the full name: <workspace_ID>.bitbucket.io
+* Step 1: Go to workspaces page https://bitbucket.org/account/workspaces/ and select the workspace that you created for HIT226.
+
+![setup site](images/workspace.png)
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Setting up your site
+
+* Step 2: Select Settings 
+![settings](images/select-settings.png)
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" -->
+### Setting up your site
+
+* Step 3: Then you can modify your workspace ID and privacy settings 
+![modify](images/modify-name.png)
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
