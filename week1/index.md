@@ -69,9 +69,10 @@ Bitbucket is a distributed source and version control platform that uses git sof
 * Tracks changes and versions over time
 	* Can go back if we broke something
 * Allows multiple people to work on the same code without disrupting eachother
+* Share our site as a public link to bitbucket.io!
 
 Note:
-Tracking our code changes on Bitbucket makes it easy to share and prevents us from trying to manage multiple versions when we're trying something new. If you broke something, you can just go revert your code back to an earlier state. Because it stores changes, instead of the whole file, it also makes it easier for multiple people to work on the same code without breaking eachother's work.
+Tracking our code changes on Bitbucket makes it easy to share and prevents us from trying to manage multiple versions when we're trying something new. If you broke something, you can just revert your code back to an earlier state. Because it stores changes, instead of the whole file, it also makes it easier for multiple people to work on the same code without breaking each other's work.
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-functions.ogg" -->
@@ -82,10 +83,11 @@ Tracking our code changes on Bitbucket makes it easy to share and prevents us fr
 * Push - send our code changes to the server
 * Fetch - Get code from the server
 * Merge - Mix new code in with ours or vice versa
+* Pull - Fetch and Merge together
 * Rebase - Like merge but different
 
 Note:
-This are some common git functions. Don't worry, you don't need to learn them all now. You might also hear git pull. This is a shortcut command to fetch and merge
+This are some common git functions. Don't worry, you don't need to learn them all now. 
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-github.ogg" -->
@@ -96,24 +98,30 @@ This are some common git functions. Don't worry, you don't need to learn them al
 * A platform to submit code changes to open source projects
 
 Note:
-Bitbucket is a commercially popular server. We're going to use it in this course to track our projects. I tis linke dot issue tracking Tool Jira and a document Wiki Confluence
+Bitbucket is a commercially popular server. We're going to use it in this course to track our projects. It is linked to the issue tracking Tool Jira and a document Wiki Confluence
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" -->
 ### Activity: Setup a git repository
-* Register for Bitbucket
+* Note if you prefer to use github, that's okay, but more instructions will be for bitbucket. The main difference is Bitbucket is used for commercial applications more and has more security
+* So now: Register for Bitbucket
 * setup you ssh key for access (esp when using visual support tools like SourecTree or GIT GUI)[https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/](Support)
-* Create a new repository for your prep for unit
+* Create a new repository for your preparation for the unit
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-wingit.ogg" -->
-### WinGit client
-* Lots of clients available
-* Download from [https://git-scm.com/download](https://git-scm.com/download)
+### Git client
+* There are lots of clients available
+* Download WinGit from [https://git-scm.com/download](https://git-scm.com/download)
 * GUI with SourceTree [https://www.sourcetreeapp.com/](https://www.sourcetreeapp.com/) and command prompt with Git Bash
 
 Note:
-There are a lot of git clients about. For those of you on windows, I'd suggest using Git GUI for windows or the git client built in to Atom
+There are a lot of git clients about. For those of you on windows, I'd suggest using Git GUI for windows or the git client built in to Visual Code Studio
+
+
+<!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-clone.ogg" -->
+#### Create a Repository
+To set up a repository on bitbucket, you need to make an account with your CDU email which hopefully you normally monitor. Then create a new repository.
 
 
 <!-- .slide: data-background-image="images/bg-mouse.jpg" data-audio-src="audio/git-clone.ogg" -->
